@@ -1,0 +1,7 @@
+name: orientdb_driver
+description: A sample command-line application
+dependencies:
+  log4dart: any
+
+#dependencies:
+#  unittest: any
