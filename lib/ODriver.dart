@@ -3,7 +3,6 @@ library orient_dart;
 import "dart:io";
 import "dart:async";
 import 'dart:typed_data';
-import 'dart:mirrors';
 
 import "package:log4dart/log4dart.dart";
 
@@ -36,7 +35,7 @@ void main() {
       OSession session = server.getSession();
       OCommand command = new OConnect('root', 'FCA2404B69E6E93FB3257AB48F9C6C2E2E73A1DC12194FD0FA785FF31AE21F5F');
       session.send(command).then((OConnectReply reply) {
-        // Nothing very interesting to display ;-)
+        // Nothing very interesting to display, sorry ! ;-)
       }, onError: (e) {
         _logger.error(e);
       });
